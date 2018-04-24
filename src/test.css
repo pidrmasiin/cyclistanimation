@@ -1,0 +1,105 @@
+html, body, #container {
+    height: 100%;
+    overflow: hidden;
+  }
+  .page {
+    height: 100%;
+  }
+  
+  .cyclist {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 80px;
+    margin: auto;
+  }
+  .boom {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .logo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .flip {
+    background: white;
+    position: relative;
+    top: 80px;
+    bottom: 0;
+    left: 500px;
+    right: 0;
+    margin: auto;
+  }
+
+  .brokenbike {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 60px;
+    bottom: 0;
+    left: 280px;
+    right: 0;
+    margin: auto;
+  }
+
+  .box {
+    height: 100%;
+    width: 100%;
+    max-width: 510px;
+    max-height: 510px;
+    background: url('./css/road.png'); 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .kid {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .speak {
+    background: black;
+    color: orange;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 80px;
+    padding: 10px;
+    font-size: 18px;
+  }
