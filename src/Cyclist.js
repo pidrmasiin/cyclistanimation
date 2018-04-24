@@ -4,6 +4,7 @@ import React from 'react';
 import {TweenMax, SteppedEase, TweenLite} from "gsap";
 import './test.css';
 import bicycle from './css/bicycle.png';
+
 class Cyclist extends React.Component {
    
     componentDidEnter () {

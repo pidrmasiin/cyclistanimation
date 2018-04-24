@@ -8,8 +8,7 @@ import Cyclist from './Cyclist.js';
 import Kid from './Kid.js';
 import Broken from './Broken.js';
 import { Link } from 'react-router-dom'
-import After from './After.js';
-import { Route } from 'react-router-dom'
+import { Grid, Image} from 'semantic-ui-react'
 
 class Unbroken extends React.Component {
   state = {
@@ -49,10 +48,24 @@ class Unbroken extends React.Component {
   }
 
   render () {
-        <Route exact path="/after" render={() => <After />} />
         return (  <Link to="/after"> 
         <div className="test">
-
+        <Grid>
+          <Grid.Row>
+          </Grid.Row>
+          <Grid.Row>
+          </Grid.Row>
+          <Grid.Row>
+          </Grid.Row>
+          <Grid.Row>
+        <Grid.Column width={5}>
+         </Grid.Column>
+         <Grid.Column className='liiteri' width={6}>
+         <Image src="http://liiteri.net/wp-content/uploads/2017/12/Liiteri-logo_700x300.png" alt="logo" />
+         </Grid.Column>
+         </Grid.Row>
+        </Grid>
+    <Grid>
     <TransitionGroup>
       { this.state.shouldShowBox && <Box/>}
       { this.state.cyclist && <Cyclist/>}
@@ -60,6 +73,7 @@ class Unbroken extends React.Component {
       { this.state.back && <Broken/> }
       { this.state.kid && <Kid/> }
     </TransitionGroup>
+    </Grid>
     </div></Link>)
 }
 }

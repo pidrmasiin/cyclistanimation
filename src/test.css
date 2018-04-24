@@ -1,9 +1,8 @@
-html, body, #container {
-    height: 100%;
-    overflow: hidden;
-  }
-  .page {
-    height: 100%;
+
+
+  .liiteri {
+    width: 50%; 
+    position: absolute;
   }
   
   .cyclist {

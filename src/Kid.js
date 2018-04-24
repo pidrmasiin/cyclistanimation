@@ -3,6 +3,7 @@
 import React from 'react';
 import {SteppedEase, TweenLite} from "gsap";
 import './test.css';
+
 class Kid extends React.Component {
     componentDidEnter () {
       const el = this.container;

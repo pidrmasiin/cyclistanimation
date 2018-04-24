@@ -1,6 +1,5 @@
 import React from 'react';
 import Unbroken from './Unbroken.js';
-import After from './After.js';
 import './css/App.css';
 
 class App extends React.Component {
@@ -17,8 +16,9 @@ componentDidMount = () => {
 }
   render() {
     if(window.location.pathname === '/after'){
-        return
-      <After/>
+        return(
+        this.props.history.push('/after')
+      )
     }
     if (this.state.redirect) {
       this.componentDidMount()

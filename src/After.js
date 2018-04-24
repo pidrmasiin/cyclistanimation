@@ -4,6 +4,8 @@ import { SteppedEase, TweenLite} from "gsap";
 import './test.css';
 import './css/App.css';
 import Cyclist from './Cyclist.js';
+import { Grid, Image} from 'semantic-ui-react'
+
 
 class After extends React.Component {
     state = {
@@ -30,6 +32,21 @@ class After extends React.Component {
 
     render () {
       return <div className="test" ref={c => this.container = c}>
+      <Grid>
+          <Grid.Row>
+          </Grid.Row>
+          <Grid.Row>
+          </Grid.Row>
+          <Grid.Row>
+          </Grid.Row>
+          <Grid.Row>
+        <Grid.Column width={5}>
+         </Grid.Column>
+         <Grid.Column className='liiteri' width={6}>
+         <Image src="http://liiteri.net/wp-content/uploads/2017/12/Liiteri-logo_700x300.png" alt="logo" />
+         </Grid.Column>
+         </Grid.Row>
+        </Grid>
       <div className='box'>
       <TransitionGroup>
       { this.state.cyclist && <Cyclist speak={'Hey, thanks a lot. You showed me that repairing is easy. Just use Liiteri!'}/>}
